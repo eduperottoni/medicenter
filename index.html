@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Medicenter</title>
 
+    <script type='text/javascript'>
+        window.onload = function(){
+            document.querySelector('.menu-mobile').addEventListener('click', function(){
+                if (document.querySelector('.menu nav ul').style.display == 'flex'){
+                    document.querySelector('.menu nav ul').style.display = 'none';
+                }else{
+                    document.querySelector('.menu nav ul').style.display = 'flex';
+                }
+            })
+        };
+    </script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -25,8 +37,6 @@
                         <li><a href="">BLOG</a></li>
                         <li><a href="">PAGES</a></li>
                         <li><a href="">DEPARTMENTS</a></li>
-                        <li><a href="">TIMETABLE</a></li>
-                        <li><a href="">GALLERY</a></li>
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -174,7 +184,22 @@
                         <div class="text">Make an appointment</div>
                         <div class="line"></div>
                     </div>
-                    <div class="widget-body">
+                    <div class="widget-body make-an-app">
+                        <p class='app-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati eligendi neque, ipsum sunt quaerat quidem facere possimus vero ab esse. </p>
+                        <div class="app-contact">
+                            <div class="phone space">
+                                <img src="./assets/img/phone.png" alt="Telefone">
+                                <p>By phone <strong>(XX) XXXX-XXXX</strong></p>
+                            </div>
+                            <div class="email space">
+                                <img src="./assets/img/email.png" alt="E-mail">
+                                <p>By e-mail <a href="">xxxxx@xxxxx.com.br</a> </p>
+                            </div>
+                            <div class="form space">
+                                <img src="./assets/img/form.png" alt="Telefone">
+                                <p>By fill in the <a href=''>form</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </aside>
@@ -205,6 +230,12 @@
                             <div class="line"></div>
                         </div>
                         <div class="widget-body">
+                            <p class='footer-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p> 
+                            <div class="clinic-infos">
+                                <div class="endereco footer-p">
+                                    <p> Medicenter Clinic - 33 Farlane Street Keilon East VIC 3033, Australia</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
