@@ -113,7 +113,6 @@ nav .active a, nav a:hover{
     display: flex;
     flex-direction:column;
     align-items:start;
-    justify-content: space-between;
 }
 
 .banner1{
@@ -217,7 +216,6 @@ aside .dept{
     background-color: #39aae1;
 }
 
-
 .flex{
     display:flex;
     flex-wrap:wrap;
@@ -302,8 +300,6 @@ footer .container{
     padding:20px;
 }
 
-
-
 .footer-area{
     display:flex;
     color:#fff;
@@ -324,4 +320,71 @@ footer .copy{
     font-size:18px;
     text-align: left;
     margin-top:30px;
+}
+
+.menu-mobile{
+    display:none;
+    width: 40px;
+    height: 40px;
+
+    margin: 40px 20px 40px 0;
+}
+
+.mm-line{
+    background-color:#39aae1;
+    height:4px;
+    width:100%
+}
+
+@media only screen and (max-width:600px){
+
+    .banner-headline,#geral section, aside,.footer-area,.copy{
+        padding:20px;
+    }
+
+    .banner-headline h2{
+        font-size: 55px;
+    }
+
+    .banner-headline h3{
+        font-size:17px;
+    }
+
+    .banner-options{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    .footer-menu, .footer-area{
+        flex-direction:column;
+    }
+
+    header .container{
+        flex-direction:initial;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display:none;
+    }
+
+    header{
+        height:auto;
+    }
+
+    header .logo{
+        padding-left:20px;
+    }
+
+    .menu-mobile{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+    
 }
